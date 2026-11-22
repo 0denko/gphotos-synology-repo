@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Photos Migrator — DSM Package Source</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         max-width: 44rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #1a1a1a; }
+  code, .url { background: #f0f0f0; padding: 0.1em 0.35em; border-radius: 4px; word-break: break-all; }
+  .url { display: block; padding: 0.5em 0.7em; margin: 0.4em 0 1em; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; margin-top: 1.8em; }
+  .warn { background: #fff7e0; border: 1px solid #e0c060; border-radius: 6px; padding: 0.6em 0.9em; }
+  img.icon { width: 64px; height: 64px; vertical-align: middle; margin-right: 0.6rem; }
+</style>
+</head>
+<body>
+
+<h1><img class="icon" src="icon_64.png" alt="">Google Photos Migrator — package source</h1>
+
+<p>This is an unofficial, self-hosted <strong>Synology DSM package source</strong> for
+<a href="https://github.com/0denko/gphotos-to-synology">Google Photos Migrator</a>, an all-in-one
+native DSM 7 app for unattended Google Photos → Synology Photos migration (no Docker or YAML required).
+The catalog files live here; the <code>.spk</code> packages themselves are downloaded by Package Center
+directly from the project's GitHub Releases.</p>
+
+<h2>Add this source in Package Center</h2>
+<ol>
+  <li>Open <strong>Package Center</strong> → <strong>Settings</strong> → <strong>Package Sources</strong> → <strong>Add</strong>.</li>
+  <li><strong>Name:</strong> <code>GPhotos Migrator</code></li>
+  <li><strong>Location:</strong>
+    <span class="url">https://0denko.github.io/gphotos-synology-repo/packages.json</span></li>
+  <li>Click <strong>OK</strong>, then find <em>Google Photos Migrator</em> under the
+    <strong>Community</strong> section and install it.</li>
+</ol>
+<p>Requirements: DSM 7.0 or later, Intel/AMD 64-bit or ARM 64-bit Synology NAS.
+DSM will show a third-party publisher warning during installation — that is expected for every
+community package on DSM 7.</p>
+
+<h2>If the package does not appear (or the wrong build is offered)</h2>
+<p>Use the catalog that matches your NAS CPU instead. It contains a single build, so there is
+nothing to mismatch:</p>
+<ul>
+  <li>Intel / AMD 64-bit models:
+    <span class="url">https://0denko.github.io/gphotos-synology-repo/packages-x86_64.json</span></li>
+  <li>ARM 64-bit models (aarch64, e.g. DS223, DS423, DS124):
+    <span class="url">https://0denko.github.io/gphotos-synology-repo/packages-arm64.json</span></li>
+</ul>
+
+<h2>Direct downloads</h2>
+<ul>
+  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0/gphotos-migrator-dsm7-x86_64.spk">gphotos-migrator-dsm7-x86_64.spk</a> (v1.2.0-0001, Intel/AMD)</li>
+  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0/gphotos-migrator-dsm7-arm64.spk">gphotos-migrator-dsm7-arm64.spk</a> (v1.2.0-0001, ARM)</li>
+  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/tag/v1.2.0">Release page with checksums</a></li>
+</ul>
+
+<p class="warn">Unofficial third-party software, not affiliated with Synology or Google.
+Install at your own risk; keep a backup of your photo library before migrating.</p>
+
+<p>Source code, documentation and issue tracker:
+<a href="https://github.com/0denko/gphotos-to-synology">github.com/0denko/gphotos-to-synology</a></p>
+
+</body>
+</html>
