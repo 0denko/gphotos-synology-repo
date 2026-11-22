@@ -28,8 +28,13 @@ directly from the project's GitHub Releases.</p>
 <ol>
   <li>Open <strong>Package Center</strong> → <strong>Settings</strong> → <strong>Package Sources</strong> → <strong>Add</strong>.</li>
   <li><strong>Name:</strong> <code>GPhotos Migrator</code></li>
-  <li><strong>Location:</strong>
-    <span class="url">https://0denko.github.io/gphotos-synology-repo/packages.json</span></li>
+  <li><strong>Location</strong> — use the catalog that matches your NAS CPU:
+    <ul>
+      <li>Intel / AMD 64-bit models:
+        <span class="url">https://0denko.github.io/gphotos-synology-repo/packages-x86_64.json</span></li>
+      <li>ARM 64-bit models (aarch64, e.g. DS223, DS423, DS124):
+        <span class="url">https://0denko.github.io/gphotos-synology-repo/packages-arm64.json</span></li>
+    </ul></li>
   <li>Click <strong>OK</strong>, then find <em>Google Photos Migrator</em> under the
     <strong>Community</strong> section and install it.</li>
 </ol>
@@ -37,21 +42,19 @@ directly from the project's GitHub Releases.</p>
 DSM will show a third-party publisher warning during installation — that is expected for every
 community package on DSM 7.</p>
 
-<h2>If the package does not appear (or the wrong build is offered)</h2>
-<p>Use the catalog that matches your NAS CPU instead. It contains a single build, so there is
-nothing to mismatch:</p>
-<ul>
-  <li>Intel / AMD 64-bit models:
-    <span class="url">https://0denko.github.io/gphotos-synology-repo/packages-x86_64.json</span></li>
-  <li>ARM 64-bit models (aarch64, e.g. DS223, DS423, DS124):
-    <span class="url">https://0denko.github.io/gphotos-synology-repo/packages-arm64.json</span></li>
-</ul>
+<h2>Combined feed (not recommended)</h2>
+<p>A combined catalog also exists at
+<span class="url">https://0denko.github.io/gphotos-synology-repo/packages.json</span>
+but DSM indexes static feeds by package name, so with two builds in one file it may offer the
+wrong architecture and the install fails with "package does not support the current arch / model".
+Prefer the per-architecture catalogs above — each contains a single build, so there is nothing
+to mismatch.</p>
 
 <h2>Direct downloads</h2>
 <ul>
-  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0/gphotos-migrator-dsm7-x86_64.spk">gphotos-migrator-dsm7-x86_64.spk</a> (v1.2.0-0001, Intel/AMD)</li>
-  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0/gphotos-migrator-dsm7-arm64.spk">gphotos-migrator-dsm7-arm64.spk</a> (v1.2.0-0001, ARM)</li>
-  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/tag/v1.2.0">Release page with checksums</a></li>
+  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0-0002/gphotos-migrator-dsm7-x86_64.spk">gphotos-migrator-dsm7-x86_64.spk</a> (v1.2.0-0002, Intel/AMD)</li>
+  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0-0002/gphotos-migrator-dsm7-arm64.spk">gphotos-migrator-dsm7-arm64.spk</a> (v1.2.0-0002, ARM)</li>
+  <li><a href="https://github.com/0denko/gphotos-to-synology/releases/tag/v1.2.0-0002">Release page with checksums</a></li>
 </ul>
 
 <p class="warn">Unofficial third-party software, not affiliated with Synology or Google.

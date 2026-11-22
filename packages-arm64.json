@@ -2,14 +2,14 @@
   "packages": [
     {
       "package": "gphotos-migrator",
-      "version": "1.2.0-0001",
+      "version": "1.2.0-0002",
       "dname": "Google Photos Migrator",
       "desc": "All-in-one native Synology DSM 7 app for unattended Google Photos to Synology Photos migration (zero Docker or YAML required). Includes multi-user picker, EXIF repair, HEIC visual deduplication, and automatic clarity/resolution upgrade.",
       "arch": "aarch64 armada37xx armv8 rtd1296 rtd1619b",
       "firmware": "7.0-40000",
-      "link": "https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0/gphotos-migrator-dsm7-arm64.spk",
-      "size": 57487360,
-      "md5": "6cd4c1e0507e99f6aec771c9dc91ec69",
+      "link": "https://github.com/0denko/gphotos-to-synology/releases/download/v1.2.0-0002/gphotos-migrator-dsm7-arm64.spk",
+      "size": 57497600,
+      "md5": "bd251d17ab0c6d3f91c68ec5b386a2bf",
       "thumbnail": [
         "https://0denko.github.io/gphotos-synology-repo/icon_64.png",
         "https://0denko.github.io/gphotos-synology-repo/icon_256.png"
@@ -34,7 +34,7 @@
       "maintainer_url": "https://github.com/0denko/gphotos-to-synology",
       "distributor": "Oleksandr Danylchenko",
       "support_url": "https://github.com/0denko/gphotos-to-synology/issues",
-      "changelog": "Release 1.2.0-0001. Details: https://github.com/0denko/gphotos-to-synology/releases/tag/v1.2.0",
+      "changelog": "Release 1.2.0-0002. Details: https://github.com/0denko/gphotos-to-synology/releases/tag/v1.2.0-0002",
       "download_count": 0,
       "recent_download_count": 0
     }
